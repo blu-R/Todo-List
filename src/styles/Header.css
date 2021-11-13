@@ -1,0 +1,10 @@
+header {
+    height: 25rem;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 7rem;
+    padding: 90px 0 20px 0;
+}

@@ -1,0 +1,40 @@
+button {
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 20px 10px 20px;
+    margin-inline: 15px;
+    background-color: transparent;
+    border: solid #ffffff 2px;
+    text-decoration: none;
+}
+
+/* button .onFocus {
+    background-color: #fff;
+} */
+
+button:hover {
+    background-color: #ffffff75;
+    cursor: pointer;
+}
+
+.isActive {
+    background-color: black;
+}
+
+.ico {
+    vertical-align: middle;
+    font-size: 1.2em;
+}
+
+header .ico {
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+}
+
+button:active {
+    background-color: black;
+}
