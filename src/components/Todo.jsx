@@ -9,7 +9,11 @@ const Todo = ({ title, status, fHandleStatus, id }) => {
     return (
         <div className="todo-container">
             <div className="todo-title">
-                <h1 style={status ? { textDecoration: `line-through` } : null}>
+                <h1
+                    style={
+                        status ? { textDecoration: `line-through` } : undefined
+                    }
+                >
                     {status ? (
                         <GrCheckboxSelected className="ico" />
                     ) : (

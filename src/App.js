@@ -11,6 +11,7 @@ function App() {
     //HOOKS
     const [todoList, setTodoList] = useState([]);
     const [filterOn, setFilterOn] = useState(false);
+    const [activeBtnName, setActiveBtnName] = useState("All");
 
     const ref = useRef();
     useEffect(() => {
@@ -26,11 +27,15 @@ function App() {
     }, []);
     //FUNCTIONS
     const filterAll = () => {
+        setActiveBtnName("All");
+
         setFilterOn(false);
         setTodoList(ref.current);
     };
 
     const filterCompleted = () => {
+        setActiveBtnName("Completed");
+
         setFilterOn(true);
         setTodoList(
             ref.current.filter((todoItem) => todoItem.completed && todoItem)
@@ -38,6 +43,9 @@ function App() {
     };
 
     const filterPending = () => {
+        // console.log(e.target.name);
+        setActiveBtnName("Pending");
+
         setFilterOn(true);
         setTodoList(
             ref.current.filter((todoItem) => !todoItem.completed && todoItem)
@@ -65,6 +73,7 @@ function App() {
     return (
         <div className="app">
             <Header
+                btnIsActive={activeBtnName}
                 title="TODO List"
                 fAll={filterAll}
                 fCompleted={filterCompleted}

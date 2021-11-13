@@ -13,7 +13,8 @@
 }
 
 .todo-title h1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    font-family: "Tenor Sans", sans-serif;
     /* text-decoration: ; */
 }
 
@@ -31,6 +32,7 @@ button.reset {
     border: 1px solid #c6d57e;
     border-radius: 10px;
     margin: 5px 0 0 0;
+    transition: all 0.3s ease;
 }
 
 button.reset:hover {
@@ -51,4 +53,5 @@ button.complete {
     outline: none;
     border: 1px solid #d57e7e;
     border-radius: 10px;
+    transition: all 0.3s ease;
 }
